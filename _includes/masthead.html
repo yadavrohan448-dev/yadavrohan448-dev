@@ -24,6 +24,19 @@
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <nav class="mobile-direct-nav" aria-label="Mobile navigation">
+        <a class="mobile-site-title" href="{{ base_path }}/">{{ site.title }}</a>
+        <div class="mobile-direct-links">
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <a class="{% if page.url contains link.url and link.url != '/' %}selected{% elsif link.url == '/' and page.url == '/' %}selected{% endif %}" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+      </nav>
     </div>
   </div>
 </div>

@@ -276,9 +276,13 @@
     text-decoration: none;
   }
 
+  .mobile-direct-nav {
+    display: none;
+  }
+
   @media (max-width: 640px) {
     body {
-      padding-top: 8.25rem;
+      padding-top: 8.75rem;
     }
 
     #main {
@@ -290,56 +294,43 @@
     }
 
     .greedy-nav {
-      min-width: 0;
-      overflow: visible;
+      display: none;
     }
 
-    .greedy-nav button,
-    .greedy-nav .hidden-links {
-      display: none !important;
+    .mobile-direct-nav {
+      display: block;
     }
 
-    .greedy-nav .visible-links {
+    .mobile-site-title {
+      display: inline-block;
+      margin-bottom: 0.35rem;
+      color: var(--rohan-ink);
+      font-size: 0.98rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .mobile-direct-links {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       gap: 0.25rem 0.35rem;
-      width: 100%;
-      min-width: 100%;
     }
 
-    .greedy-nav .visible-links li {
-      display: block;
-      flex: 0 0 auto !important;
-      position: static !important;
-      transform: none !important;
-      opacity: 1 !important;
-    }
-
-    .greedy-nav a {
-      margin: 0;
+    .mobile-direct-links a {
       padding: 0.28rem 0.48rem;
       border-radius: 5px;
+      color: var(--rohan-accent);
+      background: rgba(23, 107, 115, 0.07);
       font-size: 0.78rem;
+      font-weight: 700;
       line-height: 1.2;
-      background: rgba(23, 107, 115, 0.06);
+      text-decoration: none;
     }
 
-    .masthead__menu-item--lg {
-      flex-basis: 100% !important;
-      padding-right: 0;
-    }
-
-    .masthead__menu-item--lg a {
-      display: inline-block;
-      padding-left: 0;
-      background: transparent;
-      font-size: 0.95rem;
-      font-weight: 800;
-    }
-
-    #theme-toggle {
-      display: none !important;
+    .mobile-direct-links a.selected {
+      color: #fff;
+      background: var(--rohan-accent);
     }
 
     .profile-hero,
