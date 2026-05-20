@@ -4,6 +4,9 @@
 
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@500;600;700&display=swap" rel="stylesheet"/>
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
@@ -15,6 +18,218 @@
 <meta name="theme-color" content="#ffffff"/>
 
 <style>
+  :root {
+    --rohan-accent: #176b73;
+    --rohan-accent-2: #b65f2a;
+    --rohan-soft: #eef8f6;
+    --rohan-warm: #fff6ee;
+    --rohan-ink: #1f2933;
+  }
+
+  body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--rohan-ink);
+  }
+
+  h1, h2, h3, .page__title, .author__name {
+    font-family: "Lora", Georgia, serif;
+    letter-spacing: 0;
+  }
+
+  .page__content h2 {
+    border-bottom: 2px solid rgba(23, 107, 115, 0.18);
+  }
+
+  .masthead {
+    box-shadow: 0 8px 24px rgba(31, 41, 51, 0.06);
+  }
+
+  .author__avatar img {
+    border: 4px solid #fff;
+    box-shadow: 0 10px 24px rgba(31, 41, 51, 0.16);
+  }
+
+  .profile-hero {
+    padding: 1.4rem;
+    margin-bottom: 1.6rem;
+    border: 1px solid rgba(23, 107, 115, 0.18);
+    border-left: 6px solid var(--rohan-accent);
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--rohan-soft), #ffffff 55%, var(--rohan-warm));
+  }
+
+  .profile-hero h2 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+    border: 0;
+    color: var(--rohan-accent);
+    font-size: 1.45rem;
+    line-height: 1.35;
+  }
+
+  .profile-kicker,
+  .card-label,
+  .timeline-date {
+    margin-bottom: 0.4rem;
+    color: var(--rohan-accent-2);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .action-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 1rem;
+  }
+
+  .profile-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.25rem;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid rgba(23, 107, 115, 0.28);
+    border-radius: 6px;
+    color: var(--rohan-accent) !important;
+    background: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none !important;
+  }
+
+  .profile-button.primary {
+    color: #fff !important;
+    border-color: var(--rohan-accent);
+    background: var(--rohan-accent);
+  }
+
+  .profile-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(31, 41, 51, 0.10);
+  }
+
+  .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0 1.5rem;
+  }
+
+  .tag-cloud span {
+    padding: 0.35rem 0.65rem;
+    border: 1px solid rgba(23, 107, 115, 0.18);
+    border-radius: 999px;
+    background: var(--rohan-soft);
+    color: var(--rohan-accent);
+    font-size: 0.86rem;
+    font-weight: 700;
+  }
+
+  .card-grid,
+  .research-list {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0 1.7rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .research-card {
+    padding: 1rem;
+    border: 1px solid rgba(23, 107, 115, 0.16);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 24px rgba(31, 41, 51, 0.06);
+  }
+
+  .research-card.wide {
+    border-left: 5px solid var(--rohan-accent);
+  }
+
+  .research-card h3 {
+    margin-top: 0;
+    color: var(--rohan-accent);
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  .research-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .meta-line {
+    padding-top: 0.2rem;
+    color: #4b5563;
+    font-size: 0.92rem;
+  }
+
+  .section-intro {
+    padding: 1rem 1.1rem;
+    margin-bottom: 1.4rem;
+    border-radius: 8px;
+    background: var(--rohan-soft);
+    border: 1px solid rgba(23, 107, 115, 0.14);
+  }
+
+  .section-intro p {
+    margin-bottom: 0;
+    font-size: 1.02rem;
+  }
+
+  .timeline {
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 1.4rem;
+  }
+
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    left: 0.25rem;
+    width: 3px;
+    background: rgba(23, 107, 115, 0.18);
+    border-radius: 999px;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+    border: 1px solid rgba(23, 107, 115, 0.16);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 24px rgba(31, 41, 51, 0.06);
+  }
+
+  .timeline-item:before {
+    content: "";
+    position: absolute;
+    top: 1.25rem;
+    left: -1.33rem;
+    width: 0.72rem;
+    height: 0.72rem;
+    border: 3px solid #fff;
+    border-radius: 999px;
+    background: var(--rohan-accent-2);
+    box-shadow: 0 0 0 2px rgba(182, 95, 42, 0.24);
+  }
+
+  .timeline-item h2 {
+    margin-top: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    color: var(--rohan-accent);
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
   @media (max-width: 640px) {
     .masthead__inner-wrap {
       padding: 0.35rem 0.75rem;
@@ -46,6 +261,21 @@
 
     .masthead__menu-item--lg {
       padding-right: 0.35rem;
+    }
+
+    .profile-hero,
+    .research-card,
+    .timeline-item,
+    .section-intro {
+      padding: 0.85rem;
+    }
+
+    .profile-hero h2 {
+      font-size: 1.18rem;
+    }
+
+    .card-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>

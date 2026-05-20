@@ -7,12 +7,54 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a PhD Scholar in Economics at the Indira Gandhi Institute of Development Research (IGIDR), Mumbai. My work lies at the intersection of development economics, rural electrification, welfare delivery, energy access, labour outcomes, and applied public-policy evaluation.
+<div class="profile-hero">
+  <p class="profile-kicker">Development economics · Energy access · Public policy evaluation</p>
+  <h2>I study how public programmes shape welfare, work, education, and household decisions in India.</h2>
+  <p>I am a PhD Scholar in Economics at the Indira Gandhi Institute of Development Research (IGIDR), Mumbai. My research lies at the intersection of development economics, rural electrification, welfare delivery, energy access, labour outcomes, and applied public-policy evaluation.</p>
+  <div class="action-row">
+    <a class="profile-button primary" href="/files/Rohan_CV.pdf">Download CV</a>
+    <a class="profile-button" href="/publications/">Research</a>
+    <a class="profile-button" href="mailto:rohan@igidr.ac.in">Email</a>
+    <a class="profile-button" href="https://www.linkedin.com/in/rohan-yadav-488009221/">LinkedIn</a>
+  </div>
+</div>
 
-My current research evaluates large public programmes in India using household survey data and quasi-experimental methods. I work with datasets such as IHDS, NFHS, and PLFS, and use Difference-in-Differences, Instrumental Variables, fixed effects, and panel data methods to study how infrastructure and welfare interventions shape household outcomes.
+<h2>Research Interests</h2>
 
-Before joining the Economics PhD programme at IGIDR, I completed an M.Sc. in Physics from Jawaharlal Nehru University and a B.Sc. in Physics from Banaras Hindu University. My training in physics and economics informs my interest in rigorous empirical research, data analysis, and evidence-based policy.
+<div class="tag-cloud">
+  <span>Development economics</span>
+  <span>Rural electrification</span>
+  <span>Energy access</span>
+  <span>Welfare delivery</span>
+  <span>Labour outcomes</span>
+  <span>Applied econometrics</span>
+  <span>Policy evaluation</span>
+</div>
 
-My broader interests include sustainable development, applied policy evaluation, community-led education, and the links between public service delivery and human capability.
+<h2>Selected Work</h2>
 
-For more information, please see my [CV](/cv/), [research](/publications/), and [conference presentations](/talks/).
+<div class="card-grid">
+  <article class="research-card">
+    <p class="card-label">Working paper</p>
+    <h3>Targeted Electricity Subsidies and Rural Development</h3>
+    <p>Evaluates India's RGGVY programme using IHDS panel data and Difference-in-Differences based on programme exposure.</p>
+  </article>
+
+  <article class="research-card">
+    <p class="card-label">Working paper</p>
+    <h3>Rural Electrification and the Demographic Transition</h3>
+    <p>Studies fertility and maternal health behaviour using NFHS-4 and NFHS-5 microdata with TWFE, IV, and DiD methods.</p>
+  </article>
+
+  <article class="research-card">
+    <p class="card-label">Working paper</p>
+    <h3>Digital Identification and Disability Welfare Delivery</h3>
+    <p>Examines whether the Unique Disability ID system improves service intensity and targeting using district-level panel data.</p>
+  </article>
+</div>
+
+<h2>Methods and Data</h2>
+
+<p>My current research evaluates large public programmes in India using household survey and administrative data. I work with datasets such as IHDS, NFHS, and PLFS, and use Difference-in-Differences, Instrumental Variables, fixed effects, panel data analysis, and causal inference methods.</p>
+
+<p>Before joining the Economics PhD programme at IGIDR, I completed an M.Sc. in Physics from Jawaharlal Nehru University and a B.Sc. in Physics from Banaras Hindu University. My training in physics and economics informs my interest in rigorous empirical research, data analysis, and evidence-based policy.</p>
