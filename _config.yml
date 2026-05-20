@@ -1,8 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file controls the main settings of your AcademicPages website.
-# After changing this file on GitHub, commit the changes and wait for GitHub Pages to rebuild.
-
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Options: "default", "air", "sunrise", "mint", "dirt", "contrast"
@@ -11,18 +6,9 @@ title_separator          : "-"
 name                     : &name "Rohan Yadav"
 description              : &description "PhD Scholar in Economics at Indira Gandhi Institute of Development Research, Mumbai. My research focuses on development economics, rural electrification, welfare delivery, energy access, labour outcomes, and applied public-policy evaluation."
 
-# IMPORTANT:
-# If your repository name is yadavrohan448-dev.github.io, keep baseurl as "".
-# If your repository name is Resume, change baseurl to "/Resume".
 url                      : "https://yadavrohan448-dev.github.io"
 baseurl                  : ""
 repository               : "yadavrohan448-dev/yadavrohan448-dev.github.io"
-
-# If you are still using the old Resume repository, use these instead:
-# url                    : "https://yadavrohan448-dev.github.io"
-# baseurl                : "/Resume"
-# repository             : "yadavrohan448-dev/Resume"
-
 
 # Site Author
 # These details appear in the left sidebar.
@@ -236,16 +222,16 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 

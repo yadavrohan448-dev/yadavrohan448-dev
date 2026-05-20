@@ -7,6 +7,8 @@ Live site: https://yadavrohan448-dev.github.io
 The site is built with Jekyll and configured as a user GitHub Pages site. The public pages are:
 
 - About: `/`
+- CV: `/cv/`
 - Research: `/publications/`
 - Conferences: `/talks/`
-- CV: `/cv/`
+- Service: `/service/`
+- Awards & Honours: `/awards/`
