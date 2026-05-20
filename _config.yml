@@ -4,7 +4,7 @@ site_theme               : "default" # Options: "default", "air", "sunrise", "mi
 title                    : "Rohan Yadav"
 title_separator          : "-"
 name                     : &name "Rohan Yadav"
-description              : &description "PhD Scholar in Economics at Indira Gandhi Institute of Development Research, Mumbai. My research focuses on development economics, rural electrification, welfare delivery, energy access, labour outcomes, and applied public-policy evaluation."
+description              : &description "PhD Scholar in Economics at Indira Gandhi Institute of Development Research, Mumbai."
 
 url                      : "https://yadavrohan448-dev.github.io"
 baseurl                  : ""
