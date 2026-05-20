@@ -11,3 +11,5 @@ author_profile: true
 - [Research](/publications/)
 - [Conference Presentations](/talks/)
 - [CV](/cv/)
+- [Service](/service/)
+- [Awards & Honours](/awards/)
